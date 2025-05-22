@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        nav {
+            width: 100%;
+            height: 7vh;
+            background-color: antiquewhite;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            position: fixed;
+            top: 0;
+        }
+
+        .btn {
+            width: 100px;
+            line-height: 50px;
+            background-color: rgb(248, 207, 154);
+            border-radius: 5px;
+            text-align: center;            
+        }
+
+        .container {
+            width: 100%;
+            height: 70vh;
+            margin-top: 10px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            /* text-align: center; */
+        }
+
+        .container1 {
+            background-color: lightblue;
+        }
+
+        .container2 {
+            background-color: lightpink;
+        }
+
+        .container3 {
+            background-color: lightyellow;
+        }
+
+        .container4 {
+            background-color: lightgreen;
+        }
+        
+        .item {
+            /* width: 300px; */
+            height: 100%;
+            /* background-color: lightgray; */
+            /* border: 1px solid black; */
+            background-image: url(./images/02.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* background-position: center; */
+        }
+
+        .item1 {
+            width: 50%;
+        }
+
+        .item2 {
+            width: 47%;
+        }
+
+        .item3 {
+            width: 30%;
+        }
+
+        .item4 {
+            width: 20%;
+        }
+        
+        /* img {
+            width: 100%;
+            height: 100%;
+        } */
+
+        div p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="btn"><a href="#nav1">container1</a></div>
+        <div class="btn"><a href="#nav2">container2</a></div>
+        <div class="btn"><a href="#nav3">container3</a></div>
+        <div class="btn"><a href="#nav4">container4</a></div>
+    </nav>
+
+    <!-- <nav>
+        <a href="#nav1">container1</a>
+        <a href="#nav2">container2</a>
+        <a href="#nav3">container3</a>
+        <a href="#nav4">container4</a>
+    </nav> -->
+
+    <section id=nav1 class="container container1">
+        <div class="item item1"></div>
+    </section>
+
+    <section id=nav2 class="container container2">
+        <div class="item item2 item21"></div>
+        <div class="item item2 item22"></div>
+    </section>
+
+    <section id=nav3 class="container container3">
+        <div class="item item3 item31"></div>
+        <div class="item item3 item32"></div>
+        <div class="item item3 item33"></div>
+    </section>
+
+    <section id=nav4 class="container container4">
+        <div class="item item4 item41"></div>
+        <div class="item item4 item42"></div>
+        <div class="item item4 item43"></div>
+        <div class="item item4 item44"></div>
+    </section>
+
+</body>
+
+</html>

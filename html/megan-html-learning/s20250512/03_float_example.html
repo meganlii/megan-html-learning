@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* 根據<body>順序寫下來：container > div > box1 */
+        body {
+            background-color: black;
+        }
+
+        /* 等同table，畫整個外框的寬跟高 */
+        .container {
+            width: 80%;
+            height: 100dvh;
+            background-color: lightblue;
+            margin: auto;
+
+            /* 類似tr，做換行，畫列高 */
+            div {
+                height: 20%;
+                float: left;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+
+            /* 類似td，畫欄寬 */
+            .box1 {
+                width: 100%;
+                background-color: lightcoral;
+            }
+
+            .box2 {
+                width: 50%;
+                background-color: lightcyan;
+            }
+
+            .box3 {
+                width: 33.333333%;
+                background-color: lightgreen;
+            }
+
+            .box4 {
+                width: 25%;
+                background-color: lightseagreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="box1 box11"></div>
+        <div class="box2 box21"></div>
+        <div class="box2 box22"></div>
+        <div class="box3 box31"></div>
+        <div class="box3 box32"></div>
+        <div class="box3 box33"></div>
+        <div class="box4 box41"></div>
+        <div class="box4 box42"></div>
+        <div class="box4 box43"></div>
+        <div class="box4 box44"></div>
+    </section>
+</body>
+
+</html>
