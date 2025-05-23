@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+        } */
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid #0f0909;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* 寬度已設比例，平均分配7個欄寬，所以不設tr、th */
+            /* <table>設定表格重疊，套用到tr、td */
+
+            margin: auto;
+            text-align: center;
+            /* 表格置中、文字置中 */
+        }
+
+        th {
+            height: 40px;
+            /* 可設 列高或padding: 10px 0px; */
+        }
+
+        td {
+            height: 20px;
+            /* width: 50%; 額外設置寬度會失效 */
+            /* border-collapse:不用再設 */
+        }
+
+        div {
+            border: 3px solid blue;
+            width: 20%;
+            height: 50px;
+            display: inline-block;
+            margin-left: -8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <h2>線上日曆</h2>
+        <br>
+        <tr>
+            <th>日</th>
+            <th>一</th>
+            <th>二</th>
+            <th>三</th>
+            <th>四</th>
+            <th>五</th>
+            <th>六</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+    </table>
+    <br>
+
+    <div class="box1">11</div>
+    <div class="box1">12</div>
+    <div class="box1">13</div>
+    <div class="box2">21</div>
+    <div class="box2">22</div>
+
+
+
+
+
+</body>
+
+</html>
