@@ -7,23 +7,42 @@
     <title>國立科技高中─校園社團介紹網</title>
     <link rel="stylesheet" href="./css/sytle.css">
     <style>
+        /* cl-title */
+        .cl-title {
+            font-family: '標楷體';
+            font-weight: 500;
+            font-size: 24px;
+            color: #FF00FF;
+            text-align: center;
+            text-decoration: underline black;
+            margin-top: 10px;
+        }
+
         /* flex cl-content */
         .cl-content {
             display: flex;
             flex-direction: column;
-            background-color: lightblue;
+            /* background-color: lightblue; */
             justify-content: center;
             align-items: center;
             /* text-align: center; */
         }
 
-        .cl-content>div {
+        /* flex item */
+        .cl-content>div,
+        .item-link {
             width: 200px;
             height: 35px;
-            background-color: lightpink;
+            /* background-color: lightpink; */
             margin: 10px;
             padding: 5px;
             text-align: center;
+            background-image: url(./images/17300-104301/menu1.png);
+        }
+
+        .cl-content>div:hover,
+        .item-link:hover {
+            background-image: url(./images/17300-104301/menu2.png);
         }
     </style>
 
@@ -49,7 +68,10 @@
 
                 <!-- cl-content -->
                 <div class="cl-content">
-                    <div>吉他社</div>
+                    <a href="./guitar_history.html" class="item-link">
+                        <div>吉他社</div>
+                    </a>
+
                     <div>熱舞社</div>
                     <div>棒球社</div>
                     <div>羽球社</div>
@@ -60,7 +82,7 @@
 
             </div>
 
-            <!-- cl-bottom 左下 -->
+            <!-- cl-bottom 左下-更新日期 -->
             <div class="cl-bottom">cl-bottom</div>
 
         </div>
