@@ -17,6 +17,13 @@
             width: 85%;
         }
 
+        /* marquee */
+        marquee {
+            font-family: '標楷體';
+            font-size: 24px;
+            color: #0000FF;
+        }
+
         /* cl-title */
         .cl-title {
             font-family: '標楷體';
@@ -28,7 +35,7 @@
             margin-top: 10px;
         }
 
-        /* flex cl-content */
+        /* cl-content 選單內容 */
         .cl-content {
             display: flex;
             flex-direction: column;
@@ -69,7 +76,6 @@
                 <img src="./images/17300-104301/logo.png" alt="國立科技高中校園社團介紹網">
             </a>
 
-
         </div>
     </header>
 
@@ -85,7 +91,7 @@
                     社團介紹
                 </div>
 
-                <!-- cl-content -->
+                <!-- cl-content 選單內容-->
                 <div class="cl-content">
                     <a href="./guitar_history.html" class="item-link">
                         <div>吉他社</div>
@@ -109,7 +115,15 @@
         <!-- container-right -->
         <div class="container-right">
             <!-- cr-top 右上-跑馬燈 -->
-            <div class="cr-top">cr-top</div>
+            <!-- 「歡迎光臨校園社團介紹網，參觀後請支持社團活
+動並熱烈參與」 -->
+            <div class="cr-top">
+                <marquee behavior="" direction="">
+                    歡迎光臨校園社團介紹網，參觀後請支持社團活
+                    動並熱烈參與
+                </marquee>
+
+            </div>
 
             <!-- cr-bottom -->
             <!-- main-iframe -->
