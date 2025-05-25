@@ -4,11 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>main</title>
+    <style>
+        /* 1.背景圖片0101 */
+        body{
+            background-image: url(./images/17300-104301/0101.jpg);
+        }
+        /* 3.圖片尺寸250*250 */
+        img{
+            width: 250px;
+            height: 250px;
+        }        
+
+        /* 6.container-main 圖文-水平置中對齊 */
+        .container-main{
+            text-align: center;
+        }
+        /* 7.container-main>p 字型大小 24px (x-large 、 size=5) 
+        標楷體、粗體、斜體、顏色 #0000FF */
+        .container-main>p{
+            font-size: 24px ;
+            font-family: '標楷體';
+            font-weight:  bold;
+            font-style: italic;
+            color: #0000FF;
+        }
+
+        
+
+    </style>
 </head>
 
 <body>
-    megan main iframe
+    <!-- 預設main.html -->
+    <div class="container-main">
+        <!-- 2.合成圖片、插入圖片、替代文字 -->
+        <img src="./images/17300-104301/0104.jpg" alt="科技高中校長">
+
+        <!-- 5.空兩個空白列 -->
+        <br>
+        <br> 
+        <!-- 4.加入 校長的話、圖文兼具2個br */ -->   
+        <p>
+            嗨！歡迎加入國立科技高中。<br>
+            參加社團不僅可以豐富自己的人生，寬拓自己的視野，<br>
+            也能砥礪技能、磨練人際、培養第二專長。<br>
+            選擇一項你喜歡的社團，積極的參與和投入，<br>
+            你會獲得一陣陣的驚喜！<br>
+            
+        </p>
+        
+    </div>
 </body>
 
 </html>
