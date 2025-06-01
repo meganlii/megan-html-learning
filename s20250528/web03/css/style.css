@@ -1,90 +1,105 @@
-        /* 共切9個版面 */
-        /* 將html大綱貼過來 */
+/* 共切9個版面 */
+/* 將html大綱貼過來 *
 
-        /* 1.header 紅*/
-        /* 2.container 黃 */
+/* 1.header 紅*/
+/* 2.container 黃 *
 
-        /* 2-1 container-left 淺黃*/
-        /* 2-1-2 cl-top 淺藍*/
-        /* 2-1-2 cl-end 深藍*/
+/* 2-1 container-left 淺黃*/
+/* 2-1-1 cl-top 淺藍*/
+/* 2-1-2 cl-end 深藍*
 
-        /* 2-2 container-right 深黃/橘*/
-        /* 2-2-1 cr-top 淺綠*/
-        /* 2-2-1 cr-end 深綠*/
+/* 2-2 container-right 深黃/橘*/
+/* 2-2-1 cr-top 淺綠*/
+/* 2-2-1 cr-end 深綠*/
 
-        /* 3.footer 灰*/
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
 
-        /* 1.header */
-        /* 三大區塊顏色：紅黃綠 */
-        .header {
-            width: 1024px;
-            height: 65px;
-            background-color: red;
-            margin: auto;
-        }
+/* 1.header */
+/* 三大區塊顏色：紅黃綠 */
+/* 加框線之後，移除背景色 */
+.header{
+    width: 1024px;
+    height: 65px;
+    /* background-color: red; */
+    margin: auto;
+    border: 1px solid #000;
+}
 
-        /* 2.container */
-        /* 容易忘記先貼標題 */
-        /* calc 減號前後要留 空白 */
-        /* 寬度要重新設定1024px，不可用100% */
-        .container {
-            width: 1024px;
-            height: calc(768px - 65px - 20px);
-            background-color: yellow;
-            margin: auto;
+/* 2.container */
+/* 容易忘記先貼標題 */
+/* calc 減號前後要留 空白 */
+/* 寬度要重新設定1024px，不可用100% */
+/* 不在最外層C加框線 */
+.container{
+    width: 1024px;
+    height: calc(768px - 65px - 20px);
+    background-color: yellow;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid #000; */
+}
+/* 2-1.container-left */
+/* 左右區塊 表示上下的高度H不變 */
+.container-left{
+    width: 215px;
+    height: 100%;
+    /* background-color: lightyellow; */
+}
 
-            display: flex;
-        }
+/* 2-1-1 cl-top */
+/* 上下區塊 表示左右的寬度W不變 */
+/* 最內層box加框線，重疊線條用bd-top=0 */
+.cl-top{
+    width: 100%;
+    height: calc(100% - 25px);
+    /* background-color: lightblue; */
+    border: 1px solid #000;
+    border-top: 0;
 
-        /* 2-1 container-left */
-        /* 左右區塊 表示上下的高度H不變 */
-        .container-left {
-            width: 215px;
-            height: 100%;
-            background-color: lightyellow;
-        }
+}
+/* 2-1-2.cl-end */
+.cl-end{
+    width: 100%;
+    height: 25px;
+    /* background-color: darkblue; */
+    border: 1px solid #000;
+    border-top: 0;
+}
 
-        /* 2-1-2 cl-top */
-        /* 上下區塊 表示左右的寬度W不變 */
-        .cl-top {
-            width: 100%;
-            height: calc(100% - 25px);
-            background-color: lightpink;
-        }
+/* 2-2.container-right */
+.container-right{
+    width: calc(100% - 215px);
+    height: 100%;
+    background-color: orange
+}
 
-        /* 2-1-2 cl-end */
-        .cl-end {
-            width: 100%;
-            height: 25px;
-            background-color: lightcoral;
-        }
+/* 2-2-1 cr-top */
+/* 最內層box加框線，上面重疊線條用bdt0 */
+/* 左邊重疊用bdl0左邊重疊用bdl0 */
+.cr-top{
+    width: 100%;
+    height: 30px;
+    background-color: lightgreen;
+    border: 1px solid #000;
+    border-top: 0;
 
-        /* 2-2 container-right */
-        .container-right {
-            width: calc(1024px - 215px);
-            height: 100%;
-            background-color: grey;
-        }
+}
+/* 2-2-2.cr-end */
+.cr-end{
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: darkgreen;
+    border: 1px solid #000;
+    border-top: 0;
+}
 
-        /* 2-2-1 cr-top */
-        .cr-top {
-            width: 100%;
-            height: 29px;
-            background-color: lightgreen;
-
-        }
-
-        /* 2-2-1 cr-end */
-        .cr-end {
-            width: 100%;
-            height: calc(100% - 29px);
-            background-color: lightseagreen;
-        }
-
-        /* 3.footer */
-        .footer {
-            width: 1024px;
-            height: 20px;
-            background-color: blue;
-            margin: auto;
-        }
+/* 3.footer */
+.footer{
+    width: 1024px;
+    height: 20px;
+    background-color: grey;
+    margin: auto;
+}
