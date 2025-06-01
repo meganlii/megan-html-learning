@@ -79,7 +79,8 @@
 
 
 /* 選單區-cl-content */
-.cl-content>div{
+.cl-content>div,
+.cl-content>a {
     font-size: 20px;
     color: #000000;
     text-align: center;
@@ -94,7 +95,8 @@
     margin-left: 5px;
 }
 
-.cl-content>div:hover{
+.cl-content>div:hover,
+.cl-content>a:hover {
     background-image: url('/images/menu2.png');
 }
 
@@ -130,7 +132,6 @@
 
 }
 /* 2-2-2.cr-end */
-/* main */
 .cr-end{
     width: 100%;
     height: calc(100% - 30px);
@@ -139,6 +140,8 @@
     border-top: 0;
     border-left: 0;
 }
+
+/* main myIfame */
 
 /* 3.footer */
 .footer{
