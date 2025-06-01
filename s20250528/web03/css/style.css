@@ -78,14 +78,24 @@
 }
 
 
-
 /* 選單區-cl-content */
-.cl-content{
-    font-size: 16px;
+.cl-content>div{
+    font-size: 20px;
     color: #000000;
     text-align: center;
-    background-image: url('');
-    
+
+    width: 200px;
+    height: 35px;
+    /* background-color: lightblue; */
+    border-radius: 5px;
+    background-image: url('/images/menu1.png');
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.cl-content>div:hover{
+    background-image: url('/images/menu2.png');
 }
 
 /* 每個選項 加上背景圖片 */
@@ -120,6 +130,7 @@
 
 }
 /* 2-2-2.cr-end */
+/* main */
 .cr-end{
     width: 100%;
     height: calc(100% - 30px);
