@@ -1,0 +1,93 @@
+/* header */
+/* w 1024 h 65 */
+*{
+    margin: auto;
+    /* text-align: center; */
+    box-sizing: border-box;
+}
+.header{
+    width: 1024px;
+    height: 65px;
+    /* background-color: red; */
+    /* margin: auto; */
+    border: 1px solid #000;
+}
+
+/* container */
+/* w 1024 h768-65-20 */
+/* flex 容易忘記*/
+.container{
+    width: 1024px;
+    height: calc(768px - 65px - 20px);
+    /* background-color: yellow; */
+
+    display: flex;
+    
+}
+/* container-left */
+/* w 215 h 100%固定 */
+.container-left{
+    width: 215px;
+    height: 100%;
+    /* background-color: lightyellow; */
+}
+/* cl-top */
+/* w 100%固定 h 100%-20 */
+/* 容易忘記 border-top */
+.cl-top{
+    width: 100%;
+    height: calc(100% - 20px);
+    /* background-color: lightblue; */
+    border: 1px solid #000;
+    border-top: 0;
+}
+
+/* cl-end */
+/* w 100%固定 h 20 */
+/* 容易忘記 border-top */
+.cl-end{
+    width: 100%;
+    height: 20px;
+    /* background-color: blue; */
+    border: 1px solid #000;
+    border-top: 0;
+}
+
+/* container-right */
+/* w 100%-215 h100%固定 */
+.container-right{
+    width: calc(100% - 215px);
+    height: 100%;
+    /* background-color: orange; */
+
+}
+/* cr-top */
+/* w 100% h 29 */
+.cr-top{
+    width: 100%;
+    height: 29px;
+    /* background-color: pink; */
+    border: 1px solid #000;
+    border-top: 0;
+    border-left: 0;
+}
+
+/* cr-end */
+/* w 100% h 100%-29 */
+.cr-end{
+    width: 100%;
+    height: calc(100% - 29px);
+    /* background-color: purple; */
+    border: 1px solid #000;
+    border-top: 0;
+    border-left: 0;
+}
+
+/* footer */
+.footer{
+    width: 1024px;
+    height: 20px;
+    /* background-color: green; */
+    border: 1px solid #000;
+    border-top: 0;
+}
