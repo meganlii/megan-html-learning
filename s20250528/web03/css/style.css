@@ -26,12 +26,25 @@
 /* 1.header */
 /* 三大區塊顏色：紅黃綠 */
 /* 加框線之後，移除背景色 */
+/* 背景圖片：右下角-建立新圖層2，兩個logo放圖層2 */
+/* logo：右鍵>複製圖層 */
 .header {
     width: 1024px;
     height: 65px;
     /* background-color: red; */
     margin: auto;
     border: 1px solid #000;
+}
+
+/* 1-1 header-box */
+/* 插入圖片 w994 h60 a tag回首頁 */
+.header-box{
+    text-align: center;
+}
+
+/* a > img */
+a > img {
+    width: 90%;
 }
 
 /* 2.container */
@@ -140,7 +153,17 @@
     border: 1px solid #000;
     border-top: 0;
     border-left: 0;
+}
 
+/* marquee 不用點*/
+/* h29 w770 */
+/* fz 24 col #0000FF */
+marquee{
+    width: 770px;
+    height: 29px;
+    /* background-color: lightpink; */
+    font-size: 24px;
+    color: #0000FF;
 }
 
 /* 2-2-2.cr-end */
@@ -154,6 +177,12 @@
 }
 
 /* main myIfame */
+/* 提示自己要設定，卻忘記@@ */
+iframe {
+    width: 100%;
+    height: 100%;
+ /* background-color: red; */
+}
 
 /* 3.footer */
 .footer {
