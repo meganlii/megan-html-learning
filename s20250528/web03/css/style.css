@@ -7,8 +7,8 @@
 /* 2-1 container-left 淺黃*/
 
 /* 2-1-1 cl-top 淺藍*/
-    /* 選單區-cl-title */
-    /* 選單區-cl-content */
+/* 選單區-cl-title */
+/* 選單區-cl-content */
 
 /* 2-1-2 cl-end 深藍*
 
@@ -17,7 +17,7 @@
 /* 2-2-1 cr-end 深綠*/
 
 /* 預設字體：'標楷體' */
-*{
+* {
     box-sizing: border-box;
     font-family: '標楷體';
     /* margin: 0; */
@@ -26,7 +26,7 @@
 /* 1.header */
 /* 三大區塊顏色：紅黃綠 */
 /* 加框線之後，移除背景色 */
-.header{
+.header {
     width: 1024px;
     height: 65px;
     /* background-color: red; */
@@ -39,7 +39,7 @@
 /* calc 減號前後要留 空白 */
 /* 寬度要重新設定1024px，不可用100% */
 /* 不在最外層C加框線 */
-.container{
+.container {
     width: 1024px;
     height: calc(768px - 65px - 20px);
     /* background-color: yellow; */
@@ -47,9 +47,10 @@
     display: flex;
     /* border: 1px solid #000; */
 }
+
 /* 2-1.container-left */
 /* 左右區塊 表示上下的高度H不變 */
-.container-left{
+.container-left {
     width: 215px;
     height: 100%;
     /* background-color: lightyellow; */
@@ -59,7 +60,7 @@
 /* 上下區塊 表示左右的寬度W不變 */
 /* 最內層box加框線，重疊線條用bd-top=0 */
 /* 選單區 */
-.cl-top{
+.cl-top {
     width: 100%;
     height: calc(100% - 25px);
     /* background-color: lightblue; */
@@ -70,17 +71,27 @@
 /* 選單區-cl-title */
 /* fw 500、fsz 24 color */
 /* 記得置中 tac */
-.cl-title{
+.cl-title {
     font-weight: 500;
     font-size: 24px;
     color: #FF00FF;
     text-align: center;
 }
 
-
 /* 選單區-cl-content */
+/* flex container */
+.cl-content {
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightblue; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* a item-link */
 .cl-content>div,
-.cl-content>a {
+.item-link {
     font-size: 20px;
     color: #000000;
     text-align: center;
@@ -89,22 +100,22 @@
     height: 35px;
     /* background-color: lightblue; */
     border-radius: 5px;
-    background-image: url('/images/menu1.png');
+    background-image: url('../images/menu1.png');
     padding-top: 5px;
     margin-top: 10px;
     margin-left: 5px;
 }
 
 .cl-content>div:hover,
-.cl-content>a:hover {
-    background-image: url('/images/menu2.png');
+.item-link:hover {
+    background-image: url('../images/menu2.png');
 }
 
 /* 每個選項 加上背景圖片 */
 
 
 /* 2-1-2.cl-end */
-.cl-end{
+.cl-end {
     width: 100%;
     height: 25px;
     /* background-color: darkblue; */
@@ -113,7 +124,7 @@
 }
 
 /* 2-2.container-right */
-.container-right{
+.container-right {
     width: calc(100% - 215px);
     height: 100%;
     /* background-color: orange */
@@ -122,7 +133,7 @@
 /* 2-2-1 cr-top */
 /* 最內層box加框線 */
 /* 上方重疊-用bdt 0、左邊重疊-用bdl 0 */
-.cr-top{
+.cr-top {
     width: 100%;
     height: 30px;
     /* background-color: lightgreen; */
@@ -131,8 +142,9 @@
     border-left: 0;
 
 }
+
 /* 2-2-2.cr-end */
-.cr-end{
+.cr-end {
     width: 100%;
     height: calc(100% - 30px);
     /* background-color: darkgreen; */
@@ -144,7 +156,7 @@
 /* main myIfame */
 
 /* 3.footer */
-.footer{
+.footer {
     width: 1024px;
     height: 20px;
     /* background-color: grey; */
