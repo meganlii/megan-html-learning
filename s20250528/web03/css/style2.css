@@ -6,6 +6,7 @@
     margin: auto;
     /* text-align: center; */
     box-sizing: border-box;
+    font-family: '標楷體';
 }
 .header{
     width: 1024px;
@@ -13,6 +14,18 @@
     /* background-color: red; */
     /* margin: auto; */
     border: 1px solid #000;
+}
+
+/* .header-box */
+/* 記得加上bgc */
+.header-box{
+    text-align: center;
+    /* background-color: lightpink; */
+}
+
+/* a > img targer=首頁 */
+a > img{
+    width: 95%;
 }
 
 /* container */
@@ -44,9 +57,56 @@
     border-top: 0;
 }
 
+
+/* .cl-title：fw500 fz24 底線 置中 col#FF00FF             */
+/* 忘記用ttd text-decoration */
+/* 忘記用w跟h margin mtop 拉開間距 */
+.cl-title{
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    color: #FF00FF ;
+    
+    width: 100%;
+    height: 40px;
+    /* background-color: lightblue; */
+    margin: auto;
+    padding-top: 5px;
+    /* margin-top: 10px; */
+    
+}
+
+/* .cl-content */
+/* 忘記設 flex container */
+.cl-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightpink; */
+}
+
+/* .cl-content>div,item-link：六個 fz16 col#000000 bg-menu1 */
+/* 忘記背景圖片尺寸 200*35 */
+.cl-content>div,
+.item-link{
+    background-image: url(../images/menu1.png);
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+/* 項目：hover bg-menu2 */
+
+
+
 /* cl-end */
 /* w 100%固定 h 20 */
-/* 容易忘記 border-top */
+/* 忘記 border-top */
 .cl-end{
     width: 100%;
     height: 20px;
@@ -67,12 +127,24 @@
 /* w 100% h 29 */
 .cr-top{
     width: 100%;
-    height: 29px;
+    height: 30px;
     /* background-color: pink; */
     border: 1px solid #000;
     border-top: 0;
     border-left: 0;
 }
+
+/* 跑馬燈 marquee 元素選擇器*1 不用點 */
+/* 標楷 w770 h29 fz 24 col#0000FF */
+/* 打完W跟H，記得加上bgc */
+marquee{
+    width: 770px;
+    height: 30px;
+    /* background-color: lightblue; */
+    font-size: 24px;
+    color: #0000FF;
+}
+
 
 /* cr-end */
 /* w 100% h 100%-29 */
@@ -83,6 +155,13 @@
     border: 1px solid #000;
     border-top: 0;
     border-left: 0;
+}
+
+/* 設iframe 不用點 */
+iframe{
+    width: 100%;
+    height: 100%;
+    /* background-color: lightyellow; */
 }
 
 /* footer */
