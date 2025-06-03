@@ -79,6 +79,7 @@ a > img{
 
 /* .cl-content */
 /* 忘記設 flex container */
+/* 首頁有兩個地方要設flex */
 .cl-content{
     display: flex;
     flex-direction: column;
