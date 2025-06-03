@@ -92,7 +92,7 @@ a > img {
 }
 
 /* 選單區-cl-content */
-/* flex container */
+/* 忘記設 flex container */
 .cl-content {
     display: flex;
     flex-direction: column;
