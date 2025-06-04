@@ -2,13 +2,14 @@
 
 /* header */
 /* w 1024 h 65 */
-*{
+* {
     margin: auto;
     /* text-align: center; */
     box-sizing: border-box;
     font-family: '標楷體';
 }
-.header{
+
+.header {
     width: 1024px;
     height: 65px;
     /* background-color: red; */
@@ -18,38 +19,40 @@
 
 /* .header-box */
 /* 記得加上bgc */
-.header-box{
+.header-box {
     text-align: center;
     /* background-color: lightpink; */
 }
 
 /* a > img targer=首頁 */
-a > img{
+a>img {
     width: 95%;
 }
 
 /* container */
 /* w 1024 h768-65-20 */
 /* flex 容易忘記*/
-.container{
+.container {
     width: 1024px;
     height: calc(768px - 65px - 20px);
     /* background-color: yellow; */
 
     display: flex;
-    
+
 }
+
 /* container-left */
 /* w 215 h 100%固定 */
-.container-left{
+.container-left {
     width: 215px;
     height: 100%;
     /* background-color: lightyellow; */
 }
+
 /* cl-top */
 /* w 100%固定 h 100%-20 */
 /* 容易忘記 border-top */
-.cl-top{
+.cl-top {
     width: 100%;
     height: calc(100% - 20px);
     /* background-color: lightblue; */
@@ -61,26 +64,26 @@ a > img{
 /* .cl-title：fw500 fz24 底線 置中 col#FF00FF             */
 /* 忘記用ttd text-decoration */
 /* 忘記用w跟h margin mtop 拉開間距 */
-.cl-title{
+.cl-title {
     font-weight: 500;
     font-size: 24px;
     text-decoration: underline;
     text-align: center;
-    color: #FF00FF ;
-    
+    color: #FF00FF;
+
     width: 100%;
     height: 40px;
     /* background-color: lightblue; */
     margin: auto;
     padding-top: 5px;
     /* margin-top: 10px; */
-    
+
 }
 
 /* .cl-content */
 /* 忘記設 flex container */
 /* 首頁有兩個地方要設flex */
-.cl-content{
+.cl-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +94,7 @@ a > img{
 /* .cl-content>div,item-link：六個 fz16 col#000000 bg-menu1 */
 /* 忘記背景圖片尺寸 200*35 */
 .cl-content>div,
-.item-link{
+.item-link {
     background-image: url(../images/menu1.png);
     width: 200px;
     height: 35px;
@@ -108,7 +111,7 @@ a > img{
 /* cl-end */
 /* w 100%固定 h 20 */
 /* 忘記 border-top */
-.cl-end{
+.cl-end {
     width: 100%;
     height: 20px;
     /* background-color: blue; */
@@ -118,15 +121,16 @@ a > img{
 
 /* container-right */
 /* w 100%-215 h100%固定 */
-.container-right{
+.container-right {
     width: calc(100% - 215px);
     height: 100%;
     /* background-color: orange; */
 
 }
+
 /* cr-top */
 /* w 100% h 29 */
-.cr-top{
+.cr-top {
     width: 100%;
     height: 30px;
     /* background-color: pink; */
@@ -138,7 +142,7 @@ a > img{
 /* 跑馬燈 marquee 元素選擇器*1 不用點 */
 /* 標楷 w770 h29 fz 24 col#0000FF */
 /* 打完W跟H，記得加上bgc */
-marquee{
+marquee {
     width: 770px;
     height: 30px;
     /* background-color: lightblue; */
@@ -149,7 +153,7 @@ marquee{
 
 /* cr-end */
 /* w 100% h 100%-29 */
-.cr-end{
+.cr-end {
     width: 100%;
     height: calc(100% - 29px);
     /* background-color: purple; */
@@ -159,14 +163,14 @@ marquee{
 }
 
 /* 設iframe 不用點 */
-iframe{
+iframe {
     width: 100%;
     height: 100%;
     /* background-color: lightyellow; */
 }
 
 /* footer */
-.footer{
+.footer {
     width: 1024px;
     height: 20px;
     /* background-color: green; */
