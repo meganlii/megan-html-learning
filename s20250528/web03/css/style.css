@@ -100,6 +100,7 @@ a > img {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* gap: 20px; */
 }
 
 /* a item-link */
@@ -116,7 +117,6 @@ a > img {
     background-image: url('../images/menu1.png');
     padding-top: 5px;
     margin-top: 10px;
-    margin-left: 5px;
 }
 
 .cl-content>div:hover,

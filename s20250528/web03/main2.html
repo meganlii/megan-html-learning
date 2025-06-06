@@ -5,17 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 背景圖片0101 */
+        body {
+            background-image: url(./images/0101.jpg);
+        }
+
+        /* 設container-main */
+        /* 置中設定錯誤 */
+        .container-main {
+            /* margin: auto; */
+            text-align: center;
+        }
+
+        /* img 合成校長圖片0104 寬高250*250 */
+        img {
+            width: 250px;
+            height: 250px;
+
+        }
+
+        /* fz24 ff標楷 fw粗體 fs斜體 col=#0000FF */
+        /* .container-main>p 指定比較清楚 */
+        p{
+            font-family: '標楷體';
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+            color: #0000FF;
+        }
+    </style>
 </head>
 
 <body>
-    <p>main ok</p>
-    <!-- 背景圖片0101 -->
-
     <!-- 設container-main 分兩區 img p -->
-    <!-- img 合成校長圖片0104 alt=科技高中校長 -->
-    <!-- p 校長的話-->    
-    <!-- 圖文間距br兩個 -->
-    <!-- fz24 ff標楷 fw粗體 斜體 col=0000FF -->
+    <div class="container-main">
+        <!-- img 合成校長圖片0104 寬高250*250 alt=科技高中校長 -->
+        <img src="./images/0104.png" alt="科技高中校長">
+
+        <!-- 圖文間距br兩個 -->
+        <br>
+        <br>
+
+        <!-- p 校長的話-->
+        <p>
+            <br>嗨！歡迎加入國立科技高中。
+            <br>參加社團不僅可以豐富自己的人生、寬闊自己的視野，
+            <br>也能砥礪技能、磨練人際、培養第二專長。
+            <br>選擇一項您喜歡的社團，積極的參與和投入，
+            <br>您會獲得一陣陣的驚喜！
+
+        </p>
+    </div>
+
+
+
 
 
 
