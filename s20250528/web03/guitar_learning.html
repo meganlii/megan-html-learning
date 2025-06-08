@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 複製history.html */
+        /* body 放bgimg 0101 */
+        * {
+            font-family: '標楷體';
+            font-size: 18px;
+        }
+
+        body{
+            background-image: url(./images/0101.jpg);
+        }
+
+        /* header 吉他社社史 fs18 標楷 col#00FFFF 置中 */
+        /* 要改顏色 */
+        header{
+            color: #00FFFF;
+            text-align: center;
+
+        }
+        /* nav-flex 設flex 置中 */
+        .nav-flex{
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center; */
+            margin-top: 20px;
+        }
+
+        /* cr-content-flex 文字放0101.txt fs16 標楷 col#FF0000 靠左 */
+        /* center配gap調整 between配padding */
+        .cr-content-flexDir{
+            color: #FF0000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: lightblue; */
+            margin-top: 30px;
+            gap: 30px;
+        }
+
+        /* cr-content>a 0103.txt 10個文字按鈕 間距 hover效果 */
+        .cr-content-flexDir>a{
+            width: 200px;
+            height: 50px;
+            background-color: lightpink;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 15px 0;
+            border-radius: 5px;
+        }
+
+        .cr-content-flexDir>a:hover{
+            background-color: lightseagreen;
+        }
+
+    </style>
 </head>
 <body>
-    <p>learning OK</p>
+    <!-- 分三區 header nav-flex cr-content-flex -->
+    <!-- header 吉他社社史 fs18 標楷 col#FF0000 置中-->
+    <header>吉他社教學內容</header>
+
+    <!-- nav-flex 設三個a tag 回介紹首頁 target="_top" 置中-->
+    <nav class="nav-flex">
+        <a href="./index2.html" target="_top">回社團介紹首頁</a>
+        <a href="./guitar_history.html">吉他社社史</a>
+        <a href="./guitar_event.html">吉他社近期活動公告</a>
+    </nav>
+
+    <!-- cr-content 文字放0101.txt fs16 標楷 col#FF0000 靠左-->
+    <!-- cr-content>a 0103.txt 10個文字按鈕 間距 hover效果-->
+    <div class="cr-content-flexDir">
+        <a href="">基礎樂理</a>
+        <a href="">常用之吉他技巧</a>
+        <a href="">音程介紹以及音程表內容</a>
+        <a href="">節奏型態</a>
+        <a href="">和絃及級數和絃</a>
+        <a href="">和絃公式</a>
+        <a href="">轉位複合</a>
+        <a href="">調音法</a>
+        <a href="">吉他的保養</a>
+        <a href="">如何轉調</a>     
+
+    </div>
+
 </body>
 </html>
