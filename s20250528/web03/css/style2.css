@@ -1,4 +1,4 @@
-/* 大綱不分行貼到style */
+/* 大綱不註解貼到style */
 
 /* header */
 /* w 1024 h 65 */
@@ -9,6 +9,7 @@
     font-family: '標楷體';
 }
 
+/* 外層header 只設定外框 */
 .header {
     width: 1024px;
     height: 65px;
@@ -17,8 +18,11 @@
     border: 1px solid #000;
 }
 
-/* .header-box */
+/* 內層 另設header-box 才能設img置中 */
+/* 使用父容器和文本對齊方式 */
+/* https://realnewbie.com/coding/css/html-img-center/ */
 /* 記得加上bgc */
+/* 改設header-LinkImg */
 .header-box {
     text-align: center;
     /* background-color: lightpink; */
@@ -27,6 +31,9 @@
 /* a > img targer=首頁 */
 a>img {
     width: 90%;
+    /* display: block; */
+    /* margin: auto; */
+    
 }
 
 /* container */
@@ -111,12 +118,16 @@ a>img {
 /* cl-end */
 /* w 100%固定 h 20 */
 /* 忘記 border-top */
+/* 最近更新日期 顏色#000000 fz16 置中 */
 .cl-end {
     width: 100%;
     height: 20px;
     /* background-color: blue; */
     border: 1px solid #000;
     border-top: 0;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
 }
 
 /* container-right */
@@ -170,10 +181,15 @@ iframe {
 }
 
 /* footer */
+/* 版權區：網頁設計及維護：02李晏如 顏色#000000 置中 fz16  */
 .footer {
     width: 1024px;
     height: 20px;
     /* background-color: green; */
     border: 1px solid #000;
     border-top: 0;
+
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
 }
