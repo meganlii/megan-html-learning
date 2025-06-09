@@ -18,7 +18,7 @@
     border: 1px solid #000;
 }
 
-/* 內層 另設header-box 才能設img置中 */
+/* 內層 另設header-box 置中圖片img */
 /* 使用父容器和文本對齊方式 */
 /* https://realnewbie.com/coding/css/html-img-center/ */
 /* 記得加上bgc */
@@ -32,20 +32,19 @@
 a>img {
     width: 90%;
     /* display: block; */
-    /* margin: auto; */
-    
+    /* margin: auto; */    
 }
 
 /* container */
 /* w 1024 h768-65-20 */
 /* flex 容易忘記*/
+/* 不在最外層C加框線 */
 .container {
     width: 1024px;
     height: calc(768px - 65px - 20px);
     /* background-color: yellow; */
 
     display: flex;
-
 }
 
 /* container-left */
@@ -83,6 +82,7 @@ a>img {
     /* background-color: lightblue; */
     margin: auto;
     padding-top: 5px;
+    /* gap: 10px; */
     /* margin-top: 10px; */
 
 }
@@ -112,7 +112,10 @@ a>img {
 }
 
 /* 項目：hover bg-menu2 */
-
+.cl-content>div:hover,
+.item-link:hover {
+    background-image: url(../images/menu2.png);
+}
 
 
 /* cl-end */
@@ -174,6 +177,7 @@ marquee {
 }
 
 /* 設iframe 不用點 */
+/* 改設 class=cr-iframe */
 iframe {
     width: 100%;
     height: 100%;
