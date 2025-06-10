@@ -1,0 +1,89 @@
+    /* header
+    container-flex
+    container-left
+    cl-top
+    cl-end
+    container-right
+    cr-top
+    cr-end
+    footer */
+
+/* 共用格式 */
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* header */
+header{
+    width: 1024px;
+    height: 65px;
+    /* background-color: red; */
+    border: 1px solid #000;
+}
+
+/* container-flex */
+.container-flex{
+    width: 1024px;
+    height: calc(768px - 65px - 20px);
+    /* background-color: yellow; */
+
+    display: flex;
+}
+
+/* container-left */
+.container-left{
+    width: 215px;
+    height: 100%;
+    /* background-color: lightyellow; */
+}
+/* cl-top */
+.cl-top{
+    width: 100%;
+    height: calc(100% - 25px);
+    /* background-color: lightblue; */
+    border: 1px solid #000;
+    border-top: 0;
+}
+/* cl-end */
+.cl-end{
+    width: 100%;
+    height: 25px;
+    /* background-color: darkblue; */
+    border: 1px solid #000;
+    border-top: 0;
+}
+
+/* container-right */
+.container-right{
+    width: calc(100% - 215px);
+    height: 100%;
+    /* background-color: orange; */
+}
+/* cr-top */
+.cr-top{
+    width: 100%;
+    height: 30px;
+    /* background-color: lightgreen; */
+    border: 1px solid #000;
+    border-top: 0;
+    border-left: 0;
+}
+/* cr-end */
+.cr-end{
+    width: 100%;
+    height: calc(100% - 30px);
+    /* background-color: darkgreen; */
+    border: 1px solid #000;
+    border-top: 0;
+    border-left: 0;
+}
+
+/* footer */
+footer{
+    width: 1024px;
+    height: 20px;
+    /* background-color: green; */
+    border: 1px solid #000;
+    border-top: 0;
+}
