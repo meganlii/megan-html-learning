@@ -31,7 +31,7 @@
     <!-- 1.header-ctn--> 分兩區：1個ctn+1個box
     <header>
 
-        <!-- header-box --> 置中圖片img
+        <!-- header-box --> 置中img
         <!-- 使用父容器和文本對齊方式 -->
         <div class="header-linkImg"></div>
         <a href="">
@@ -45,29 +45,37 @@
     <!-- cl-title --> 標題
 
     <!-- cl-content-flexDire --> 選項六個
-    <!-- 第一個a tag 設定 --> class、target
-    <!-- class=item-link target="myIframe" --> 設定
-    <!-- hover效果個別設，無法共用，半形: -->
+    第一個a tag 設定 class、target
+    class=item-link target="myIframe" 設定
+    hover效果個別設，無法共用，半形:
     <div>
-        <a href="" class=item-link target="myIframe"></a>
-    </div>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
+        <a href="" class=item-link target="myIframe">
+            <div>吉他社</div>
+        </a>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
 
+        
+    </div>
     <!-- cl-end --> 最近更新日期
 
     <!-- container-right -->
     <!-- .cr-top --> 設跑馬燈 marquee
 
     <!-- .cr-end -->
-    <!-- 改設 class=cr-iframe --> name="myIframe"
-    1.放main.html
+    1.iframe 設 class=cr-iframe  
+    2.src=main.html  name="cr-iframe" 
+    
+    3.main.html
+    分兩區 img p：跟header一樣，ctn+box
+    
 
-    2.guitar_history.html > target="myIframe"
-    <!-- 分三區 header、nav-flex、cr-content -->
+
+    <!-- 2.guitar_history.html 顯示在cr-end區iframe  -->
+    分三區 header、nav-flex、cr-content
     <!-- 1. header -->
     <header></header>
 
@@ -82,28 +90,32 @@
     <!-- 3. cr-content -->
     <div class="cr-content"></div>
 
-    3.吉他社史，另外兩個內部連結
-    (1)近期活動：較複雜 需設flex-wrap
-    <!-- header、nav-flex、menu-flex -->
-    <!-- cr-content-flexWrap：cr-title、cr-date/cr-top 四組 -->
+    <!-- 3.吉他社史，另外兩個內部連結 -->
+    <!-- (1)event.html：設flex-wrap，較複雜  -->
+    分四大區3小區
+    header、nav-flex、menu-flex
+    cr-content-flexWrap
+        cr-title
+        cr-date/cr-top 四組
 
-    <!-- 1. header -->
-    <!-- 2. nav-flex -->
-    <!-- 3. menu-flex --> 設書籤/內部連結 #id
 
-    <!-- 4. cr-content-flexWrap -->
-    <!-- cr-title -->
+    1. header
+    2. nav-flex
+    3. menu-flex 設書籤/內部連結 #id
 
-    <!-- cr-date 設#id -->
-    <!-- cr-top + a tag -->
+    4. cr-content-flexWrap
+    cr-title
 
-    (2)教學內容：
-    <!-- header、nav-flex、cr-content-flexDire -->
-    <!-- 1. header -->
+    cr-date 設#id
+    cr-top + a tag
 
-    <!-- 2. nav-flex -->
-    <!-- 3. cr-content-flexDire -->
-    <!-- hover效果 -->
+    <!-- (2)learning.html -->
+    header、nav-flex、cr-content-flexDire
+    1. header
+
+    2. nav-flex
+    3. cr-content-flexDire
+    hover效果
 
 
     <!-- 3.footer --> 版權區

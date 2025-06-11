@@ -17,6 +17,7 @@
 * {
     margin: auto;
     box-sizing: border-box;
+    font-family: '標楷體'
 }    
 
 /* header */
@@ -26,6 +27,18 @@ header{
     height: 65px;
     /* background-color: red; */
     border: 1px solid #000;
+}
+
+/* header-linkImg 設置中 img才設大小 */
+.header-linkImg{
+    text-align: center;
+}
+
+/* img h60 W994px太麻煩，改設90% */
+a>img {
+    /* width: 994px; */
+    /* height: 60px; */
+    width: 90%;
 
 }
 
@@ -60,8 +73,48 @@ header{
 }
 
 /* cl-title 標題 */
-/* cl-content-flexDire 選項 */
+/* fz24 fw500 底線 text-dec置中 col #FF00FF */
+.cl-title{
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+    color: #FF00FF;
+    /* margin: 5px; 會造成整個格子下移*/
+    padding: 5px;
+}
 
+/* cl-content-flexDire 選項 */
+.cl-content-flexDire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+/* fz16 粗體500 col #000000
+選項背景menu1
+hover背景換成 menu2 */
+.cl-content-flexDire>div,
+.item-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    background-image: url(../images/menu1.png);
+    width: 200px;
+    height: 35px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.cl-content-flexDire>div:hover,
+.item-link:hover{
+    background-image: url(../images/menu2.png);
+
+}
 
 /* cl-end 最進更新日期 */
 /* 設框線 */
@@ -71,8 +124,14 @@ header{
 
     /* background-color: lightpink; */
     border: 1px solid #000;
-    border-top: 0;  
+    border-top: 0;
+/* 標楷 fz16 col#000000 置中 */
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
 }
+
+
 
 /* container-right */
 .container-right{
@@ -93,6 +152,15 @@ header{
     border-left: 0;
 }
 
+/* marquee w770 h30 標楷 fz24 col #0000FF  */
+marquee{
+    width: 770px;
+    height: 30px;
+    font-size: 24px;
+    color: #0000FF;
+
+}
+
 /* cr-end main.html iframe */
 /* 設框線 */
 .cr-end{
@@ -103,6 +171,15 @@ header{
     border: 1px solid #000;
     border-top: 0;
     border-left: 0;
+}
+
+
+
+
+/* 忘記設定iframe 寬高100% */
+iframe{
+    width: 100%;
+    height: 100%;
 }
 
 /* footer */
