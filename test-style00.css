@@ -1,0 +1,33 @@
+/* CSS目錄 */
+/* 1.header-ctn*/
+分兩區：1個ctn+1個box
+/* 2.container-flex */
+/* container-left */
+/* cl-top */
+選單區
+/* cl-title */
+標題
+/* cl-content-flexDire */
+選項六個
+/* 第一個a tag 設定 */
+class、target
+/* class=item-link target="myIframe" */
+設定
+/* hover效果個別設，無法共用，半形: */
+
+/* cl-end */
+最近更新日期
+/* container-right */
+/* .cr-top */
+設跑馬燈 marquee
+/* .cr-end */
+/* 改設 class=cr-iframe */
+name="myIframe"
+1.放main.html 2.guitar_history.html>target="myIframe"
+/* 分三區 header、nav-flex、cr-content */
+/* 1. header */
+<header></header>
+/* 2. nav-flex */
+第一個a tag>設target="_top"
+
+/* 3. cr-content */
