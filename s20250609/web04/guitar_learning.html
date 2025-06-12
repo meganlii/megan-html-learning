@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./images/0101.jpg);
+        }
+
+        header {
+            font-size: 18px;
+            font-family: '標楷體';
+            text-align: center;
+            color: #0FF;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 15px;
+        }
+
+        /* cr-content-flexDire  hover 顏色改變*/
+        .cr-content-flexDire {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* font-size: 20px; */
+            margin-top: 30px;
+            gap: 30px;
+
+        }
+
+        .cr-content-flexDire>a {
+            width: 200px;
+            height: 50px;
+            background-color: lightpink;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            /* margin-top: 5px; */
+
+        }
+
+        .cr-content-flexDire>a:hover {
+            background-color: lightseagreen
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 分三區 header nav-flex cr-content-flexDire -->
+    <!-- header -->
+    <header>吉他社教學內容</header>
+
+    <!-- nav-flex -->
+    <div class="nav-flex">
+        <a href="./index.html" target="_top">回社團介紹首頁</a>
+        <a href="./guitar_histroy.html">吉他社社史</a>
+        <a href="./guitar_event.html">吉他社近期活動公告</a>
+    </div>
+
+    <!-- cr-content-flexDire -->
+    <div class="cr-content-flexDire">
+        <a href="">基礎樂理</a>
+        <a href="">常用之吉他技巧</a>
+        <a href="">音程介紹以及音程表內容</a>
+        <a href="">節奏型態</a>
+        <a href="">和絃及級數和絃</a>
+        <a href="">和絃公式</a>
+        <a href="">轉位複合</a>
+        <a href="">調音法</a>
+        <a href="">吉他的保養</a>
+        <a href="">如何轉調</a>
+    </div>
+
+</body>
+
+</html>
