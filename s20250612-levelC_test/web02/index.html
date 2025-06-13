@@ -48,13 +48,18 @@
                 <!-- main.html 設cr-iframe -->
 
                 <div class="cl-content-flexDire">
-                    <!-- <div>
+                    <!-- 兩個a tag比較差異  -->
+                    <!-- https://claude.ai/share/9cb5e905-68fa-42e1-863b-6770ba606d9d -->
+
+                    <!-- <div> 外層是 <div>，內層是 <a>，只有文字「吉他社」可以點擊
                         <a href="./guitar_histroy.html" class="item-link" target="cr-iframe">
                             吉他社
                         </a>
                     </div> -->
-
-                    <a href="./guitar_histroy.html" class="item-link">
+                    
+                    <!-- 外層是 <a> 連結，內層是 <div> -->
+                    <!-- 整個 div 區域都可以點擊  W/H範圍200*35 -->
+                    <a href="./guitar_histroy.html" class="item-link" target="cr-iframe">
                         <div>吉他社</div>
                     </a>
 
