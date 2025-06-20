@@ -6,26 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    /* 移動範圍看能否成功包住五個區域 */
     .container {
       width: 50%;
-      /* background-color: lightblue; */
+      height: 70vh;
+      background-color: #faf9f7;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin: auto;
+      text-align: center;
+      box-shadow: 2px 2px 5px lightgray;
 
     }
 
     input,
     select {
-      width: 100%;
+      width: 80%;
+      height: 50px;
+      border-radius: 3px;
+      margin-top: 20px;
     }
 
     .btnCt {
       width: 50%;
-      background-color: lightpink;
-      /* margin: auto; */
+      /* background-color: lightpink; */
+      margin: auto;
+
     }
 
     button {
       width: 100%;
       height: 50px;
+      margin-top: 10px;
+
     }
   </style>
 </head>
@@ -46,20 +59,22 @@
 
     <p><input type="number" id="num2" value="5"></p>
 
-  </div>
 
-  <!-- 計算按鈕 btnCt -->
-  <div class="btnCt">
-    <button type="button" id="myBtn">myBtn</button>
-  </div>
 
-  <br>
-  <br>
-  <hr>
-  <!-- 顯示結果 result -->
-  <p id="resultP">
-    num1 + num2 = ???
-  </p>
+    <!-- 計算按鈕 btnCt -->
+    <div class="btnCt">
+      <button type="button" id="myBtn">myBtn</button>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <!-- 顯示結果 result -->
+    <p id="resultP">
+      num1 + num2 = ???
+    </p>
+
+  </div>
 
   <script>
     // 1.bink
