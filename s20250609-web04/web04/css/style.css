@@ -1,0 +1,187 @@
+/* header
+
+    container-flex
+        container-left
+            cl-top 選單區
+                cl-title 標題
+                cl-content-flexDire 選項
+    
+            cl-end 最進更新日期
+        container-right
+            cr-top 跑馬燈 marquee
+            cr-end main.html iframe
+
+    footer */
+
+/* 忘記設 box-sizing: border-box 造成頭尾變成1026px*/
+* {
+  margin: auto;
+  box-sizing: border-box;
+  font-family: "標楷體";
+}
+
+/* header */
+/* 設框線 */
+header {
+  width: 1024px;
+  height: 65px;
+  /* background-color: red; */
+  border: 1px solid #000;
+}
+
+/* header-linkImg 設置中 img才設大小 */
+.header-linkImg {
+  text-align: center;
+}
+
+/* img h60 W994px太麻煩，改設90% */
+a > img {
+  /* width: 994px; */
+  /* height: 60px; */
+  width: 90%;
+}
+
+/* container-flex */
+/* 最外層 不設框線 */
+.container-flex {
+  width: 1024px;
+  height: calc(768px - 65px - 20px);
+  /* background-color: yellow; */
+  /* border: 1px solid #000; */
+  border-top: 0;
+
+  display: flex;
+}
+
+/* container-left */
+.container-left {
+  width: 215px;
+  height: 100%;
+  /* background-color: lightyellow; */
+}
+
+/* cl-top 選單區 */
+/* 設框線 */
+.cl-top {
+  width: 100%;
+  height: calc(100% - 25px);
+
+  /* background-color: lightblue; */
+  border: 1px solid #000;
+  border-top: 0;
+}
+
+/* cl-title 標題 */
+/* fz24 fw500 底線 text-dec置中 col #FF00FF */
+.cl-title {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-align: center;
+  color: #ff00ff;
+  /* margin: 5px; 會造成整個格子下移*/
+  padding: 5px;
+}
+
+/* cl-content-flexDire 選項 */
+.cl-content-flexDire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* fz16 粗體500 col #000000
+選項背景 menu1
+hover背景換成 menu2 */
+.cl-content-flexDire > div,
+.item-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  background-image: url(../images/menu1.png);
+  width: 200px;
+  height: 35px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.cl-content-flexDire > div:hover,
+.item-link:hover {
+  background-image: url(../images/menu2.png);
+}
+
+/* cl-end 最進更新日期 */
+/* 設框線 */
+.cl-end {
+  width: 100%;
+  height: 25px;
+
+  /* background-color: lightpink; */
+  border: 1px solid #000;
+  border-top: 0;
+  /* 標楷 fz16 col#000000 置中 */
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+
+/* container-right */
+.container-right {
+  width: calc(100% - 215px);
+  height: 100%;
+  /* background-color: orange; */
+}
+
+/* cr-top 跑馬燈 marquee */
+/* 設框線 */
+.cr-top {
+  width: 100%;
+  height: 30px;
+
+  /* background-color: lightgreen; */
+  border: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+}
+
+/* marquee w770 h30 標楷 fz24 col #0000FF  */
+marquee {
+  width: 770px;
+  height: 30px;
+  font-size: 24px;
+  color: #0000ff;
+}
+
+/* cr-end main.html iframe */
+/* 設框線 */
+.cr-end {
+  width: 100%;
+  height: calc(100% - 30px);
+
+  /* background-color: lightseagreen; */
+  border: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+}
+
+/* 容易忘記設定iframe 寬高100% */
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+/* 設框線 */
+footer {
+  width: 1024px;
+  height: 20px;
+
+  /* background-color: blue; */
+  border: 1px solid #000;
+  border-top: 0;
+  font-size: 16px;
+  text-align: center;
+}

@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -30,22 +30,17 @@
     <header>
         <div class="header-linkImg">
             <a href="./index.html">
-                <img src="./images/logo.png" alt="">
-
+                <img src="./images/logo.png" alt="" />
             </a>
         </div>
-
     </header>
 
     <!-- container-flex -->
     <div class="container-flex">
-
         <!-- container-left -->
         <div class="container-left">
-
             <!-- cl-top 選單區 -->
             <div class="cl-top">
-
                 <!-- cl-title 標題 社團介紹 -->
                 <!-- fz24 粗體500 底線 置中 col #FF00FF -->
                 <div class="cl-title">社團介紹</div>
@@ -55,12 +50,11 @@
                 <!-- 選項背景menu1 -->
                 <!-- hover背景換成 menu2 -->
 
-                <!-- main設iframe，name=cr-iframe -->
-
+                <!-- main設iframe，target=cr-iframe -->
+                <!-- 點選吉他社 切換到cr-end iframe區域 -->
                 <div class="cl-content-flexDire">
-                    <a href="./guitar_histroy.html" class=item-link target="cr-iframe">
+                    <a href="./guitar_histroy.html" class="item-link" target="cr-iframe">
                         <div>吉他社</div>
-
                     </a>
 
                     <div>熱舞社</div>
@@ -69,46 +63,33 @@
                     <div>足球社</div>
                     <div>童軍社</div>
                 </div>
-
             </div>
 
             <!-- cl-end 最進更新日期 -->
-            <div class="cl-end">
-                最近更新日期：2025/06/12
-            </div>
-
+            <div class="cl-end">最近更新日期：2025/06/12</div>
         </div>
 
         <!-- container-right -->
         <div class="container-right">
-
             <!-- cr-top 跑馬燈 marquee -->
             <div class="cr-top">
                 <marquee behavior="" direction="">
-                    歡迎光臨校園社團介紹網，參觀後請支持社團活
-                    動並熱烈參與
+                    歡迎光臨校園社團介紹網，參觀後請支持社團活 動並熱烈參與
                 </marquee>
             </div>
 
-            <!-- cr-end main.html iframe -->
-            <!-- 忘記設定iframe 寬高100% -->
+            <!-- cr-end 預設main.html -->
+            <!-- iframe 設name="cr-iframe -->
+            <!-- CSS容易忘記設定 iframe 寬高100% -->
             <div class="cr-end">
                 <!-- main設iframe，name=cr-iframe -->
-                <iframe src="./main.html" frameborder="0" name="cr-iframe">
-
-                </iframe>
+                <iframe src="./main.html" frameborder="0" name="cr-iframe"> </iframe>
             </div>
-
         </div>
     </div>
 
     <!-- footer -->
-    <footer>
-        網頁設計及維護：02李晏如
-
-    </footer>
-
-
+    <footer>網頁設計及維護：02李晏如</footer>
 </body>
 
 </html>
